@@ -16,7 +16,7 @@ String prenume = "Ion"; // variabila locala
 FirstClass obj = new FirstClass();
 System.out.println(obj.name);	
 
-//System.out.println(prenume);		
+System.out.println(prenume);		
 
 System.out.println("Test de luni");
 
