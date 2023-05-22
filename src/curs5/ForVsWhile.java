@@ -6,7 +6,9 @@ public class ForVsWhile {
 
 	public static void main(String[] args) {
 	
-		rezolvareCuWhile();
+		// rezolvareCuWhile();
+		rezolvareDoWhile();
+		
 		
 		
 	}
@@ -40,6 +42,25 @@ public class ForVsWhile {
 			}
 			 scan.close();
 		}
+		
+		public static void rezolvareDoWhile() {
+			
+			 Scanner scan = new Scanner(System.in);
+			 int nr; // = scan.nextInt();
+			 
+			 do {
+				
+				 System.out.println("Please enter a number");
+				 nr = scan.nextInt();
+				 System.out.println(nr *10);
+				 
+			} while(nr !=0);
+			 
+			 
+			 scan.close();
+			
+		}
+		
 
 	}
 
