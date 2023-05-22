@@ -43,7 +43,7 @@ public class DiceGame {
 					continuaJocul =  scan.nextBoolean();
 					
 					
-		
+		}
 		 scan.close();
 		 System.out.println("GAME OVER!");
 
