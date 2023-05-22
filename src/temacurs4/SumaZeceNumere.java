@@ -24,13 +24,19 @@ public class SumaZeceNumere {
 	
 	public static void main(String[] args) {
 	
-		  int suma = 0;
+		    int suma = 0;
 	        Scanner scan = new Scanner(System.in);
 
 	        for (int i = 1; i <= 10; i++) {
+	        
+	        	//am folosit bucla for pentru a itera cele 10 numere pe care user-ul le introduce de la tastatura
+	        	// am citit fiecare numar in interiorul buclei folosind scan.next(int)
+	        
 	            System.out.print("Te rog introdu numarul " + i + ": ");
 	            int numar = scan.nextInt();
 	            suma += numar;
+	            
+	            //Am calculat suma prin adaugarea fiecarui numar introdus la variabila suma folosind operatorul +=.
 	        }
 
 	        System.out.println("Suma numerelor este: " + suma);
