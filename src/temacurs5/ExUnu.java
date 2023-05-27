@@ -16,36 +16,38 @@ public class ExUnu {
 	
 	public static void main(String[] args) {
 		
-	        String user = "";
-	        String password = "";
-	        
-	        int attempts = 0;
-	        
-	        Scanner input = new Scanner(System.in);
+	    String user = "";
+        String password = "";
 
-	        do {
-	            System.out.println("Enter a user: ");
-	            user = input.nextLine();
-	            
-	            System.out.println("Enter a password: ");
-	            password = input.nextLine();
-	            
-	            attempts++;
-	            
-	            if (user.equalsIgnoreCase("TestUser") && password.equals("1234")) {
-	                System.out.println("Login successful");
-	                break;
-	            } else {
-	                System.out.println("Login error");
-	            }
-	        } while (attempts < 3);
+        int attempts = 0;
+        boolean loginSuccessful = false;
 
-	        if (attempts == 3) {
-	            System.out.println("Maximum attempts reached. User blocked");
-	        }
+        Scanner input = new Scanner(System.in);
 
-	        input.close();
-	    }
+        do {
+            System.out.println("Enter a user: ");
+            user = input.nextLine();
+
+            System.out.println("Enter a password: ");
+            password = input.nextLine();
+
+            attempts++;
+
+            if (user.equalsIgnoreCase("TestUser") && password.equals("1234")) {
+                System.out.println("Login successful");
+                loginSuccessful = true;
+                break;
+            } else {
+                System.out.println("Login error");
+            }
+        } while (attempts < 3);
+
+        if (attempts >= 3 && !loginSuccessful) {
+            System.out.println("Maximum attempts reached. User blocked");
+        }
+
+        input.close();
+    }
 	
 
 }
