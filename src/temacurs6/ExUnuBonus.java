@@ -69,7 +69,8 @@ public class ExUnuBonus {
 	                    bonus = 1200;
 	                }
 	             break;
-	             default:
+	             
+	       default:
 	             break;
 	        }
 
