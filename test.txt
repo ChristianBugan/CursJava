@@ -1,0 +1,1 @@
+Textul scris in fisier din Java!

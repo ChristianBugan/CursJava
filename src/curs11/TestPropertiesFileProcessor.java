@@ -8,9 +8,10 @@ public class TestPropertiesFileProcessor {
 		
 		PropertiesFileProcessor obj = new PropertiesFileProcessor();
 		obj.writePropertiesFile();
-		
-		obj.readPropertiesFile("email");
 		obj.readPropertiesFile("user");
+		obj.updatePropertiesFile("email", "nimic");
+		obj.updatePropertiesFile("browser", "thor");
+		obj.deleteFromPropertiesFile("email");
 
 	}
 
