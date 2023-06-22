@@ -1,1 +1,2 @@
 Textul scris in fisier din Java!
+Alt text in acest fisier
