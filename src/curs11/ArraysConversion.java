@@ -13,7 +13,7 @@ public class ArraysConversion {
 		Set<Integer> setNumbers = new HashSet<Integer>(Arrays.asList(numbers));
 		
 		for(Integer num : setNumbers) {
-			System.out.print(num);
+			System.out.println(num);
 		}
 		
 		List<Integer> listNumbers = new ArrayList<Integer>(Arrays.asList(numbers));
